@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <title>ToDo App</title>
+</head>
+
+<body class="p-3" id="body">
+
+    <div class="flex justify-between align-baseline p-2">
+        <span class="font-bold">ToDo-App</span>
+        <div class="flex align-baseline justify-between w-1/2">
+            <input class="border py-2 px-3 text-grey-darkest" placeholder="search">
+            <p class="font-bold w-1/2 px-4" id="time-node"></p>
+        </div>
+    </div>
+
+    <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded w-full " onclick="toggleInput()">
+        <span class="font-mono font-bold">➕ Add Task</span>
+    </button>
+
+    <div id="addTaskContainer">
+        <div id="input-div" class="flex mt-2">
+            <input type="text" placeholder="enter your text here" id="todo-item"
+                class="border py-2 px-3 text-grey-darkest w-full">
+            <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded ml-2" id="task-button">✔️</button>
+        </div>
+    </div>
+
+
+    <div id="toDoContainer" class="bg-red">
+
+    </div>
+
+    <script src="/src/scripts/app.js"></script>
+</body>
+
+</html>
